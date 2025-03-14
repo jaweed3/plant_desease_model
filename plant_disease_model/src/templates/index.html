@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Plant Disease Detection</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Plant Disease Detection</h1>
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <label for="file">Upload an image of the plant leaf:</label>
+            <input type="file" id="file" name="file" accept="image/*" required>
+            <button type="submit">Predict</button>
+        </form>
+        {% if prediction %}
+            <h2>Prediction Result:</h2>
+            <p>{{ prediction }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
