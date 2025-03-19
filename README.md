@@ -1,6 +1,10 @@
 # Plant Disease Classification Model
 
-This project is a Flask web application that allows users to upload images of plants and receive predictions on potential diseases using a pre-trained TensorFlow model.
+This project is a Flask web application that allows users to upload images of plants and receive predictions on potential diseases using a Convolutional Neural Network (CNN) implementation with Tensorflow model.
+
+This Projects is using Kaggle Plant Desease Dataset. And improved with the Tensorflow preprocessing reached 90% accuracy.
+
+You can get the Dataset here `https://www.kaggle.com/datasets/emmarex/plantdisease`
 
 ## Project Structure
 
