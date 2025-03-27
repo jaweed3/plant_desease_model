@@ -39,7 +39,12 @@ def predict():
             'Tomato Healthy',
             'Pepper Bell Bacterial Spot',
             'Tomato Late Blight',
-            'Tomato Mosiac Virus']
+            'Tomato Mosiac Virus',
+            'Tomato Target Spot',
+            'Pepper Bell Healthy',
+            'Tomato Sectoria Leaf Spot',
+            'Tomato Leaf Mold',
+            ]
         predicted_class = class_names[np.argmax(prediction)]
         return render_template('index.html', prediction=predicted_class)
 
