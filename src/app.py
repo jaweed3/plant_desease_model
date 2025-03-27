@@ -35,7 +35,11 @@ def predict():
         prediction = model.predict(img_array)
         os.remove(file_path)
         # Assuming the model returns a class index, you can map it to class names
-        class_names = ['Disease A', 'Disease B', 'Healthy']
+        class_names = [
+            'Tomato Healthy',
+            'Pepper Bell Bacterial Spot',
+            'Tomato Late Blight',
+            'Tomato Mosiac Virus']
         predicted_class = class_names[np.argmax(prediction)]
         return render_template('index.html', prediction=predicted_class)
 
