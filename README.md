@@ -32,7 +32,13 @@ plant_disease_model
    cd plant_disease_model
    ```
 
-2. Install the required dependencies:
+2. Install The Environment:
+   ```
+   conda create -n plant_env python=3.11
+   conda activate plant_env
+   ```
+
+3. Install the required dependencies:
    ```
    pip install -r requirements.txt
    ```
