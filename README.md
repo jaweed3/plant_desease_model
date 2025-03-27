@@ -13,7 +13,7 @@ plant_disease_model
 ├── src
 │   ├── app.py                # Entry point of the Flask application
 │   ├── model
-│   │   └── model.h5         # Trained TensorFlow model for plant disease classification
+│   │   └── plant_desease_model.h5         # Trained TensorFlow model for plant disease classification
 │   ├── static
 │   │   └── styles.css        # CSS styles for the web application
 │   ├── templates
