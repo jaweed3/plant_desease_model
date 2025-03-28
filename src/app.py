@@ -7,7 +7,7 @@ import os
 app = Flask(__name__)
 
 # Load the model
-model = tf.keras.models.load_model('model/plant_desease_model.keras')
+model = tf.keras.models.load_model('src\model\plant_desease_model.keras')
 
 # Define a function to preprocess the image
 def preprocess_image(img_path):
